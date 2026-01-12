@@ -21,7 +21,10 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background-image: url('cs.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 40px;
     text-align: center;
@@ -254,7 +257,7 @@ textarea:focus {
     opacity: 1;
 }
 
-/* Checkbox styles */
+
 .checkbox-group {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -399,5 +402,17 @@ textarea {
     .rating-buttons label {
         padding: 8px 4px;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .radio-group {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .checkbox-group {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .rating-buttons {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
