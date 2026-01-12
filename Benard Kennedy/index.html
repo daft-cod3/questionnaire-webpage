@@ -3,136 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benard Kennedy</title>
+    <title>Product Review - Samsung Model X1</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <span class="logo-text">Samsung</span>
+    <div class="container">
+        <div class="header">
+            <h1>Product Review</h1>
+            <p>Help us improve by sharing your experience with Samsung Model X1</p>
         </div>
-        <div class="contact-info">
-            <div><i class="fas fa-globe"></i></div>
-            <div><i class="fas fa-envelope"></i></div>
-            <div><i class="fas fa-phone"></i> </div>
+        
+        <div class="form-container">
+            <form id="reviewForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>How satisfied are you with the Samsung Model X1? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied" required>
+                            <label for="very-dissatisfied">Very Dissatisfied</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                            <label for="dissatisfied">Dissatisfied</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="neutral" name="satisfaction" value="neutral">
+                            <label for="neutral">Neutral</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                            <label for="satisfied">Satisfied</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+                            <label for="very-satisfied">Very Satisfied</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating-section">
+                    <label>Rate the following features:</label>
+                    <div class="rating-grid">
+                        <div class="rating-item">
+                            <h4>Battery Life</h4>
+                            <div class="rating-buttons">
+                                <input type="radio" id="battery-poor" name="battery" value="poor">
+                                <label for="battery-poor">Poor</label>
+                                <input type="radio" id="battery-fair" name="battery" value="fair">
+                                <label for="battery-fair">Fair</label>
+                                <input type="radio" id="battery-good" name="battery" value="good">
+                                <label for="battery-good">Good</label>
+                                <input type="radio" id="battery-excellent" name="battery" value="excellent">
+                                <label for="battery-excellent">Excellent</label>
+                            </div>
+                        </div>
+                        
+                        <div class="rating-item">
+                            <h4>Speed</h4>
+                            <div class="rating-buttons">
+                                <input type="radio" id="speed-poor" name="speed" value="poor">
+                                <label for="speed-poor">Poor</label>
+                                <input type="radio" id="speed-fair" name="speed" value="fair">
+                                <label for="speed-fair">Fair</label>
+                                <input type="radio" id="speed-good" name="speed" value="good">
+                                <label for="speed-good">Good</label>
+                                <input type="radio" id="speed-excellent" name="speed" value="excellent">
+                                <label for="speed-excellent">Excellent</label>
+                            </div>
+                        </div>
+                        
+                        <div class="rating-item">
+                            <h4>Support</h4>
+                            <div class="rating-buttons">
+                                <input type="radio" id="support-poor" name="support" value="poor">
+                                <label for="support-poor">Poor</label>
+                                <input type="radio" id="support-fair" name="support" value="fair">
+                                <label for="support-fair">Fair</label>
+                                <input type="radio" id="support-good" name="support" value="good">
+                                <label for="support-good">Good</label>
+                                <input type="radio" id="support-excellent" name="support" value="excellent">
+                                <label for="support-excellent">Excellent</label>
+                            </div>
+                        </div>
+                        
+                        <div class="rating-item">
+                            <h4>Performance</h4>
+                            <div class="rating-buttons">
+                                <input type="radio" id="performance-poor" name="performance" value="poor">
+                                <label for="performance-poor">Poor</label>
+                                <input type="radio" id="performance-fair" name="performance" value="fair">
+                                <label for="performance-fair">Fair</label>
+                                <input type="radio" id="performance-good" name="performance" value="good">
+                                <label for="performance-good">Good</label>
+                                <input type="radio" id="performance-excellent" name="performance" value="excellent">
+                                <label for="performance-excellent">Excellent</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Additional features you'd like to see:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="wireless-charging" name="features" value="wireless-charging">
+                            <label for="wireless-charging">Wireless Charging</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="water-resistance" name="features" value="water-resistance">
+                            <label for="water-resistance">Water Resistance</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="better-camera" name="features" value="better-camera">
+                            <label for="better-camera">Better Camera Quality</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="longer-warranty" name="features" value="longer-warranty">
+                            <label for="longer-warranty">Longer Warranty</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Share your thoughts and suggestions..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
         </div>
-    </header>
+    </div>
 
-    <main class="main-content">
-        <h1>Product Review Questionnaire</h1>
-        <p class="subtitle">Your response will play a vital role in enhancing your experience with our product.</p>
-
-        <form class="questionnaire-form">
-            <div>
-                <img src="phone.jpeg" alt="product image" class="product-image"/>
-            </div>
-            <div class="form-row">
-                
-                <div class="form-group">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName">
-                </div>
-                <div class="form-group">
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" placeholder="mm/dd/yyyy">
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="mobile">Mobile:</label>
-                    <input type="tel" id="mobile" name="mobile">
-                </div>
-            </div>
-
-            <div class="satisfaction-section">
-                <label class="section-label">How satisfied are you with the user interface of the Samsung Model X1?</label>
-                <div class="radio-group">
-                    <label class="radio-label">
-                        <input type="radio" name="satisfaction" value="very-dissatisfied">
-                        Very Dissatisfied
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="satisfaction" value="dissatisfied">
-                        Dissatisfied
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="satisfaction" value="neutral">
-                        Neutral
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="satisfaction" value="satisfied">
-                        Satisfied
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="satisfaction" value="very-satisfied">
-                        Very Satisfied
-                    </label>
-                </div>
-            </div>
-
-            <div class="rating-section">
-                <h2>Please rate the following features of the Connect Model X1:</h2>
-                
-                <div class="rating-grid">
-                    <div class="rating-category">
-                        <h3>Battery Life</h3>
-                        <div class="rating-options">
-                            <label><input type="radio" name="battery" value="poor"> Poor</label>
-                            <label><input type="radio" name="battery" value="fair"> Fair</label>
-                            <label><input type="radio" name="battery" value="good"> Good</label>
-                            <label><input type="radio" name="battery" value="excellent"> Excellent</label>
-                        </div>
-                    </div>
-
-                    <div class="rating-category">
-                        <h3>Speed</h3>
-                        <div class="rating-options">
-                            <label><input type="radio" name="speed" value="poor"> Poor</label>
-                            <label><input type="radio" name="speed" value="fair"> Fair</label>
-                            <label><input type="radio" name="speed" value="good"> Good</label>
-                            <label><input type="radio" name="speed" value="excellent"> Excellent</label>
-                        </div>
-                    </div>
-
-                    <div class="rating-category">
-                        <h3>Support</h3>
-                        <div class="rating-options">
-                            <label><input type="radio" name="support" value="poor"> Poor</label>
-                            <label><input type="radio" name="support" value="fair"> Fair</label>
-                            <label><input type="radio" name="support" value="good"> Good</label>
-                            <label><input type="radio" name="support" value="excellent"> Excellent</label>
-                        </div>
-                    </div>
-
-                    <div class="rating-category">
-                        <h3>Performance</h3>
-                        <div class="rating-options">
-                            <label><input type="radio" name="performance" value="poor"> Poor</label>
-                            <label><input type="radio" name="performance" value="fair"> Fair</label>
-                            <label><input type="radio" name="performance" value="good"> Good</label>
-                            <label><input type="radio" name="performance" value="excellent"> Excellent</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comments-section">
-                <label for="comments">Do you have any additional comments or suggestions for improvements?</label>
-                <textarea id="comments" name="comments" rows="5"></textarea>
-            </div>
-
-            <p class="thank-you">Thank you for participating in our questionnaire! Your feedback is valuable to us.</p>
-
-            <div class="submit-container">
-                <button type="submit" class="submit-btn">Submit</button>
-            </div>
-        </form>
-    </main>
+    <script src="script.js"></script>
 </body>
 </html>
