@@ -266,3 +266,12 @@ h1 {
         padding: 20px;
     }
 }
+
+.product-image {
+    width: 100%;
+    max-width: 200px;
+    height:200px;
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+}
